@@ -1,0 +1,106 @@
+@use "../variables/variables" as v;
+// VARIABLES
+
+main {
+  width: 85%;
+  margin: auto;
+
+  section {
+    height: 90vh;
+    // border: 2px solid red;
+    padding-top: 100px;
+    .home__Text {
+      //   border: 2px solid red;
+
+      .txt {
+        font-size: 100px;
+        color: v.$letraB;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+
+        span {
+          color: v.$colorletraverde;
+        }
+      }
+      .home__description {
+        font-size: 20px;
+        color: v.$letraB;
+        margin-bottom: 30px;
+        width: 60%;
+      }
+    }
+    .btn__app {
+      padding: 12px 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-right: 15px;
+      border: 2px solid v.$colorletraverde;
+      background-color: transparent;
+      box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 15px;
+      transition: all 0.5s ease;
+      color: v.$light;
+    }
+
+    .btn__app:hover {
+      letter-spacing: 3px;
+      background-color: hsl(145, 94%, 47%);
+      color: v.$dark;
+      box-shadow: rgb(43, 223, 82) 0px 7px 29px 0px;
+    }
+
+    .btn__app:active {
+      letter-spacing: 3px;
+      background-color: hsl(261deg 80% 48%);
+      color: hsl(0, 0%, 100%);
+      box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+      transform: translateY(10px);
+      transition: 100ms;
+    }
+  }
+  //seccion characters//
+  .characters {
+    height: 100vh;
+    // border: 2px solid red;
+    padding-top: 100px;
+    background-color: v.$dark;
+    .lista__personajes {
+      h2 {
+        color: v.$light;
+        text-align: center;
+        font-size: 55px;
+        padding-bottom: 8.3rem;
+      }
+      .meal {
+        color: v.$dark;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.3rem;
+
+        .card__Character {
+          background-color: v.$nav-bar;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          h5,
+          p {
+            padding-top: 20px;
+            font-size: 38px;
+          }
+          .div__image {
+            width: 150px; /* Puedes ajustar esto según tus necesidades */
+            height: 150px; /* Puedes ajustar esto según tus necesidades */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+}

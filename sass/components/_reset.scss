@@ -1,0 +1,14 @@
+@use "../variables/variables" as v;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  // background-image: url(/public/pawel-czerwinski-YAtspJ-HV2E-unsplash.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: v.$dark;
+}

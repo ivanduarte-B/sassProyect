@@ -1,0 +1,148 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #232425;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  background: transparent;
+  color: white;
+  padding-top: 40px;
+  margin: auto;
+}
+.nav svg {
+  width: 50px;
+  height: 50px;
+}
+.nav .nav__container {
+  display: flex;
+  align-items: center;
+}
+.nav .nav__container button:first-of-type {
+  color: #232425;
+}
+.nav .nav__container .nav__item {
+  text-decoration: none;
+  color: rgb(184, 177, 177);
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav .nav__container .nav__item:hover {
+  transition: all 0.5s ease;
+  color: rgb(71, 245, 71);
+  transform: scale(1.1);
+}
+.nav .nav__container .active {
+  color: rgb(71, 245, 71);
+}
+.nav .nav__container .btn {
+  background-color: rgb(71, 245, 71);
+  border-radius: 20px;
+}
+.nav .nav__container .btn:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  color: #232425;
+}
+
+main {
+  width: 85%;
+  margin: auto;
+}
+main section {
+  height: 90vh;
+  padding-top: 100px;
+}
+main section .home__Text .txt {
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+main section .home__Text .txt span {
+  color: rgb(71, 245, 71);
+}
+main section .home__Text .home__description {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  width: 60%;
+}
+main section .btn__app {
+  padding: 12px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 15px;
+  border: 2px solid rgb(71, 245, 71);
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  color: #f6f6f9;
+}
+main section .btn__app:hover {
+  letter-spacing: 3px;
+  background-color: hsl(145, 94%, 47%);
+  color: #232425;
+  box-shadow: rgb(43, 223, 82) 0px 7px 29px 0px;
+}
+main section .btn__app:active {
+  letter-spacing: 3px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+main .characters {
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #232425;
+}
+main .characters .lista__personajes h2 {
+  color: #f6f6f9;
+  text-align: center;
+  font-size: 55px;
+  padding-bottom: 8.3rem;
+}
+main .characters .lista__personajes .meal {
+  color: #232425;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+}
+main .characters .lista__personajes .meal .card__Character {
+  background-color: #dbf0fe;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .characters .lista__personajes .meal .card__Character h5,
+main .characters .lista__personajes .meal .card__Character p {
+  padding-top: 20px;
+  font-size: 38px;
+}
+main .characters .lista__personajes .meal .card__Character .div__image {
+  width: 150px; /* Puedes ajustar esto según tus necesidades */
+  height: 150px; /* Puedes ajustar esto según tus necesidades */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=styles.css.map */
